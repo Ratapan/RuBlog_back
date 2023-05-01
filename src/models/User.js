@@ -14,6 +14,10 @@ const userSchema = new Schema({
         type: String,
         required:true
     },
+    checkup: {
+        type: Boolean,
+        required:true
+    },
     role:[{
         ref:"Role",
         type: Schema.Types.ObjectId

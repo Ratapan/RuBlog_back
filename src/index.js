@@ -1,8 +1,7 @@
 import app from './app'
+import config from "./config";
 import './database'
 
-const port = 3000
+app.listen(config.PORT);
 
-app.listen(port);
-
-console.log(`server listen on port http://localhost:${port}`)
+console.log(`server listen on port http://localhost:${config.PORT}`)
