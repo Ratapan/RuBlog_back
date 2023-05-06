@@ -73,4 +73,5 @@ export const checkup = async (req, res) => {
   catch{
     return res.status(400).json({ message: "Invalid token" });
   }
+  
 };
